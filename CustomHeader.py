@@ -7,7 +7,7 @@ class CustomHeader(QHeaderView):
         super().__init__(QtCore.Qt.Horizontal, parent) 
         self.main_header = header
         self.setModel(CustomHeaderModel(labels))
-        self.sectionResized.connect(self.updateSizes)
+        self.sectionResized.connect(self.updateSizes) 
         self.main_header.sectionResized.connect(self.updateSizes)
         self.setGeometry(0, 0, header.width(), header.height())
         
