@@ -1,5 +1,5 @@
 # Customer business logic
-import sqlite3
+import sqlite3 
 
 class CustomerManager:
     def __init__(self, db_path="Data/database.db"):
